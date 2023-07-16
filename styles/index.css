@@ -3,6 +3,7 @@
     margin: 0px;
     background: #181719;
     font-family: 'Montserrat', sans-serif;
+    max-width: 1440px;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -51,7 +52,7 @@ main{
     width: 90%;
 }
 .main-section{
-    max-width: 1440px;
+    max-width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,8 +97,8 @@ main{
  
     color: white;
     position: relative;
-    left: 400px;
-    bottom: 100px;
+    left: 850px;
+    bottom: 200px;
     padding: 20px;
   
 }
