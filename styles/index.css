@@ -3,7 +3,6 @@
     margin: 0px;
     background: #181719;
     font-family: 'Montserrat', sans-serif;
-    max-width: 1440px;
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -44,7 +43,7 @@ body{
 
 }
 
-main{
+.main-main{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -56,7 +55,7 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 100px;
+    padding: 100px;
 }
 .main-title{
     padding-bottom: 200px;
@@ -70,8 +69,9 @@ main{
     font-weight: 500;
 
 }
-.main-img > img{
-    padding-left: 85px;
+.photo{
+    width: 90%;
+    padding-left: 200px;
 }
 .main-title p{
     width: 90%;
@@ -97,8 +97,9 @@ main{
  
     color: white;
     position: relative;
-    left: 850px;
-    bottom: 200px;
+    right: 100px;
+    left: 45    0px;
+    bottom: 100px;
     padding: 20px;
   
 }
@@ -111,7 +112,7 @@ main{
     border-radius: 50%;
 }
 .badge-title{
-    margin-top: 5px;
+    padding-top: 5px;
 
 }
 .badge-title h3{
@@ -137,16 +138,15 @@ main{
     font-weight: 700;
 
 }
-footer{
+.footer p{
     color: #A9A9A9;
     text-align: center;
     font-family: Montserrat;
     font-size: .8rem;
-
     font-weight: 500;
 
 }
-span{
+.footer span{
     color: #A9A9A9;
     font-family: Montserrat;
     font-size: .8rem;
@@ -154,4 +154,75 @@ span{
     font-weight: 700;
 
     text-decoration-line: underline;
+}
+@media screen and (max-width:576px) {
+   
+    .main-img{
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+    .main-img .img-badge{
+        position: relative;
+        left: 450px;
+        
+        
+       
+        
+    }
+    .main-section{
+          
+        flex-direction: column;
+      
+    }
+    .photo img{
+        width: 700px;
+        position: relative;
+        left: 75px;
+        margin: 20px;
+    
+    }
+    .main-title{
+        width: 500px;
+        padding-left: 300px;
+        padding-top: 20px;
+    }
+    .main-title h1{
+        font-size: 4rem;
+    }
+    .main-title p{
+     
+        font-size: 2rem;
+        text-align: left   ;
+    }
+    .section-title{
+       flex-direction: column;
+        gap: 100px;
+    }
+    .section-title >ul  li{
+        font-size: 1.7rem;
+        position: relative;
+        right: 50px;
+    }
+    .section-title h3{
+        font-size: 2rem;
+        width: 200px;
+        position: relative;
+        right: 60px;
+        padding-bottom: 20px;
+
+    }
+    .footer{
+        
+        width: 400px;
+    
+        
+        margin-left: 180px;
+    }
+    .footer p , .footer span{
+        font-size: 1rem;
+
+    }
+
 }
